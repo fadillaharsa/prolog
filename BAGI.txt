@@ -1,0 +1,7 @@
+Domains
+	list=integer*
+Predicates
+	bagi(list,list,list).
+Clauses
+	bagi([],[],[]).
+	bagi([H1|T1],[H2|T2],[H3|T3]):-H3=H1/H2,bagi(T1,T2,T3).

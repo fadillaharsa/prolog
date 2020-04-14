@@ -1,0 +1,18 @@
+Domains
+	manusia=symbol.
+	umur=integer.
+
+Predicates
+	orang(manusia,umur).
+	adik(manusia,manusia).
+	kakak(manusia,manusia).
+
+Clauses
+	orang(tuti,42).
+	orang(chein,50).	
+	orang(iza,25).
+	orang(retno,5).
+	orang(siska,19).
+	
+	adik(X,Y):-orang(X,A),orang(Y,B),A<B.
+	kakak(X,Y):-orang(X,A),orang(Y,B),A>B.

@@ -1,0 +1,9 @@
+Domains
+	list = integer*
+
+Predicates
+	elemen(list,integer)
+ 
+Clauses
+	elemen([],0).
+	elemen([H|T],X):-elemen(T,M), X=M+H.
